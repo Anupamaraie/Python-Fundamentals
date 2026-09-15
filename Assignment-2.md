@@ -59,21 +59,21 @@ invoice-cleaner/
 ## Step 2: Write the Line Validation Function
 
 ### Write a function validate_invoice(line) that:
-  Removes extra spaces around the string using .strip().
-  Splits the line into a list using .split(",").
-  Checks if all 3 fields exist and verifies that the customer name is not empty.
-  Converts the amount to a float and ensures it is greater than 0.
+  1. Removes extra spaces around the string using .strip().
+  2. Splits the line into a list using .split(",").
+  3. Checks if all 3 fields exist and verifies that the customer name is not empty.
+  4. Converts the amount to a float and ensures it is greater than 0.
 
 Returns: The valid amount as a float if everything is correct, or None if the line is invalid.
 
 ## Step 3: Read and Process the File
 In your main script (main.py):
-  Open invoices.txt and iterate through it line-by-line using a for loop.
-  Use a try/except block to catch any float conversion errors gracefully.
-  Keep track of the following variables:
-  Total count of valid invoices
-  Total count of skipped (corrupted) records
-  Total sum of valid invoice amounts
+  1. Open invoices.txt and iterate through it line-by-line using a for loop.
+  2. Use a try/except block to catch any float conversion errors gracefully.
+  3. Keep track of the following variables:
+  4. Total count of valid invoices
+  5. Total count of skipped (corrupted) records
+  6. Total sum of valid invoice amounts
 
 ## Step 4: Write the Output Summary Report
-### Write the final metrics into summary_report.txt using file writing mode: open("summary_report.txt", "w").
+ Write the final metrics into summary_report.txt using file writing mode: open("summary_report.txt", "w").
